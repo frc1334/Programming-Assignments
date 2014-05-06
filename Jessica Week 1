@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int lowernumber;
+   int highernumber;
+   int sum;
+   cin >> lowernumber >> endl;
+   cin >> higherhumber >> endl;
+    lowernumber + highernumber = sum
+
+    cout << "sum:" << sum << endl;
+    return 0;
+}
