@@ -8,7 +8,7 @@ int sumSwap;
 int main()
 {
     int num,i,count,n; //Declares num, i, count, n
-    int r; //does noting yet.
+    int r; //does nothing yet.
     cout << "Enter range: ";
     cin >> n;
     //cin >> r;
