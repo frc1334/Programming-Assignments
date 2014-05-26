@@ -3,14 +3,48 @@
 using namespace std;
 
 int main()
-{
-   int lowernumber;
-   int highernumber;
-   int sum;
-   cin >> lowernumber >> endl;
-   cin >> higherhumber >> endl;
-    lowernumber + highernumber = sum
 
-    cout << "sum:" << sum << endl;
+{
+    int lowernumber;
+    int highernumber;
+    int i;
+    int sum = 0;
+    int a;
+    int b;
+    cout << "Enter your lower number: ";
+    cin >> lowernumber;
+    cout << "Enter your higher number: ";
+    cin >> highernumber;
+
+    for(int x = lowernumber; x<highernumber; x++)
+    {
+
+        bool prime = true;
+        for (int i = 2; i < x; i++)
+        {
+            a=x/i;
+            b=x%i;
+
+            if (b==0)
+            {
+                prime = false;
+                break;
+            }
+        }
+        if (prime)
+        {
+            cout << x << " is prime" <<endl;
+            sum = sum + x;
+        }
+
+        /*for (int sum; sum++)
+        {
+            sum = x +1;
+            cout << "Sum: " << sum;
+        }*/
+
+    }
+    cout << "Sum: " << sum << endl;
+
     return 0;
 }
