@@ -1,0 +1,50 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+    int firstnumber;   /* These "int" variables introduce the variables i'm using */
+    int secondnumber;
+    int i;
+    int sum = 0;
+    int a;
+    int b;
+    cout <<"Enter the first number: ";     /* The question the program will ask firstly */
+    cin >> firstnumber;
+    cout << "Enter the second number: ";
+    cin >> secondnumber;
+
+    for(int y=firstnumber; y<secondnumber; y++)     /* It starts with the first number and uses the for loop to repeat until it hits the second number*/
+    {
+        bool prime=true;
+        for (int i=2; i < y; i++)             /* i starts at 2, and will go into a for loop until it gets to y, where it stops */
+        {
+            a=y/i;                       /* These are used to determine whether a number is prime or not, variable be being false and variable a being true. */
+            b=y%i;
+
+            if (b==0)                    /* You want the remainder the number to be zero, if it is not, it isn't prime */
+            {
+                prime=false;
+                break;
+            }
+        }
+        if(prime)
+        {
+            cout << y << "is prime" << endl;
+            sum=sum+y;                                /* This is saying the numbers that are prime and will lastly add them together to find the sum of all the prime numbers between any 2 given numbers */
+
+        }
+
+    }
+    cout << "The sum is: " << sum << endl;
+
+
+
+
+
+
+
+        }
+
