@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int a;
+int b;
+int s; //sum
+int p; //product
+int d; //difference
+cout<<"Input number A"<< "\n";
+cin>>a;
+cout<<"Input number B" << "\n";
+cin>>b;
+s=a+b;
+p=a*b;
+d=s-p;
+cout<<"Sum="<<s <<"\n";
+cout<<"Product="<<p <<"\n";
+cout<<"Difference="<<d;
+}
