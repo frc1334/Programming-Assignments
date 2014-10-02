@@ -1,6 +1,6 @@
-#include <iostream>
 
-using namespace std;
+
+
 
 int main()
 {
@@ -12,7 +12,7 @@ int d; //difference
 cout<<"Input number A"<< "\n";
 cin>>a;
 cout<<"Input number B" << "\n";
-cin>>b;
+
 s=a+b;
 p=a*b;
 d=s-p;
